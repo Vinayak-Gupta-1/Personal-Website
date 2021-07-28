@@ -71,7 +71,7 @@ function Home() {
                     </div>
                     <p className={HomeStyles.Question}>What languages/software am I proficient in?</p>
                     <div className={HomeStyles.Table}>
-                        <SkillBar skills={skills} colors={colors} height="6vh" animationDelay="0" animationDuration="2000" offset="200" />
+                        <SkillBar skills={skills} colors={colors} height="6vh" animationDelay="0" animationDuration="2000" />
                     </div>
                 </div>
             </div>
