@@ -1,0 +1,37 @@
+@mixin fontStyle(
+  $lineHeight: normal,
+  $fontSize: 14px,
+  $fontWeight: 500,
+  $color: white, 
+  $letterSpacing: normal
+) {
+  font-family: Circular;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: $letterSpacing;
+  line-height: $lineHeight;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $color;
+}
+
+@mixin flexStyle($justify: space-between) {
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin paddingStyle($left: 0, $right: 0, $bottom: 0, $top: 0) {
+  padding-left: $left;
+  padding-right: $right;
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin circularImageStyle($radius: 7vh, $float: none) {
+  height: $radius;
+  width: $radius;
+  border-radius: 50%;
+  float: $float
+}
+
+

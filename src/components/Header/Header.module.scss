@@ -1,0 +1,30 @@
+@import "../../_mixins";
+
+.Title {
+    width: 86%;
+    height: 15vh;
+    @include paddingStyle($right: 7%, $left: 7%, $bottom: 0vh, $top: 5vh);
+    @include flexStyle();
+    align-items: baseline;   
+}
+
+.Name{
+    @include fontStyle($fontSize: 6.4vh, $color: #faed26);
+    text-decoration: none;
+}
+
+.RightMenuText{
+    @include fontStyle($fontSize: 2.75vh);
+    text-decoration: none;
+}
+
+.RightMenu {
+    width: 42%;
+    @include flexStyle();
+    margin: 0;
+  }
+
+  .CompanyLogo{
+    @include circularImageStyle($radius: 2.5vw);
+    margin-top: 1.5vh;
+}

@@ -1,0 +1,67 @@
+@import "../../_mixins";
+.BodyDiv {
+    width: 86%;
+    @include paddingStyle($left: 7%, $right: 7%, $bottom: 10vh)
+}
+
+.PreHeaderText{
+    @include fontStyle($fontSize: 5.12vh, $fontWeight: normal);
+}
+
+.HeaderDiv{
+    @include flexStyle();
+    margin-top: 3vh;
+    margin-bottom: 0vh;
+    align-items: center
+}
+
+.HeaderText{
+    @include fontStyle($fontSize: 8vh, $fontWeight: normal);
+}
+
+.ImagesDiv{
+    @include flexStyle();
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProfilePicture{
+    @include circularImageStyle($radius: 30vw);
+    float: right;
+}
+
+.SubHeaderText{
+    @include fontStyle($fontSize: 4.8vh, $color: #faed26);
+    margin-top: 0vh;
+    margin-bottom: 4vh
+}
+
+.AboutMeBody {
+    @include fontStyle($fontSize:3.52vh, $lineHeight:7.5vh, $letterSpacing: 0.1vh);
+}
+
+.AboutMeSubSection {
+    @include flexStyle();
+    align-items: center;
+}
+
+.Question {
+    color: #faed26;
+    margin: 0 
+}
+
+.Answer{
+    margin-top: 0vh;
+    width: 75%;
+    margin-bottom: 3vh 
+}
+
+.AboutImages{
+    @include circularImageStyle($radius: 17vw, $float: right)
+}
+
+.Table{
+    width: 50%;
+    @include paddingStyle($top: 5vh);
+    font-family: Arial;
+}
