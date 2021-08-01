@@ -5,67 +5,59 @@
 }
 
 .BodyContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    @include flexStyle();
+    margin-bottom: 7.5vh;
+}
+
+.BodyContent2{
+    @extend .BodyContent;
+    width: 75%;
+    @include paddingStyle($left: 12.5%, $right: 12.5%)
 }
 
 .HeaderText{
-    @include fontStyle($fontSize: 7vh, $fontWeight: normal);
+    @include fontStyle($fontSize: 7.2vh, $fontWeight: normal);
     margin-top: 12vh;
-    margin-bottom: 4vh;
+    margin-bottom: 7.5vh;
     text-decoration: underline;
     text-align: center
 }
 .MiddleBox{
-    margin-left: 2vh;
-    margin-right: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center 
 }
 .SubHeaderText{
     @include fontStyle($fontSize: 4.8vh, $color: #faed26);
-    margin-bottom: 2vh;
+    margin-bottom: 0vh;
+    margin-top: 2vh;
+}
+
+.MiniHeaderText{
+    @include fontStyle($fontSize: 2.2vh,);
+    margin-bottom: 1vh;
+}
+
+.ViewProjectText{
+    @extend .MiniHeaderText;
+    color: #faed26;
 }
 
 .BodyText {
-    @include fontStyle($fontSize:3vh, $lineHeight:7.5vh, $letterSpacing: 0.1vh);
+    @include fontStyle($fontSize:3vh, $lineHeight:5vh);
 }
 
-.ImagesDiv{
-    @include flexStyle();
+.Image{
+    @include circularImageStyle($radius: 15vw);
+    margin-bottom: 3vh;
+}
+
+.ImageHeaderDiv{
+    display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.ProfilePicture{
-    @include circularImageStyle($radius: 30vw);
-    float: right;
-}
-
-
-
-
-.AboutMeSubSection {
-    @include flexStyle();
-    align-items: center;
-}
-
-.Question {
-    color: #faed26;
-    margin: 0 
-}
-
-.Answer{
-    margin-top: 0vh;
-    width: 75%;
-    margin-bottom: 3vh 
-}
-
-.AboutImages{
-    @include circularImageStyle($radius: 17vw, $float: right)
-}
-
-.Table{
-    width: 50%;
-    @include paddingStyle($top: 5vh);
-    font-family: Arial;
+    align-items: center; 
+    text-align: center
 }
