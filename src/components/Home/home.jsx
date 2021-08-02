@@ -49,7 +49,7 @@ function Home() {
                             My name is Vinayak Gupta - most people call me Vinny. I am a third year Computer Science
                             Specialist at the University of Toronto, also purusing a Statistics Major and Math Minor.
                             When not on campus, I'm back home in India with my family (and dog!). In my spare time I hike in
-                            the Himalayas, watch all kinds of sports and play the guitar.  Check out this picture of me on the summit
+                            the Himalayas, watch all kinds of sports and play the guitar.  Check out this picture of me at the summit
                             of one of my treks! </p>
                         <img className={HomeStyles.AboutImages} src={hiking} />
                     </div>

@@ -46,7 +46,7 @@ function Projects() {
                         projectName="This Website!"
                         projectDesc="Yes indeed! I built this very website over the summer of second year.
                         I harnessed the power of Youtube to learn React, SaaS and CSS modules to build this, 
-                        if I may say so myself, very elegant wesbite!"
+                        if I may say so myself, very elegant website! :)"
                         viewLink="https://github.com/Vinayak-Gupta-1/personal_website"
                     />
 
@@ -83,7 +83,7 @@ function Projects() {
                         type="School"
                         projectName="PlayNow"
                         projectDesc="For a school project, I used HTML, Java and WAMP to solve an everyday problem: occupied 
-                        sporting facilties in my appartment complex. I built a GUI that let residents register 
+                        sports facilties in my appartment complex. I built a GUI that let residents register 
                         themselves over WLAN and then prebook sporting facities, find sports buddies, lend/borrow equipment 
                         and even find coaches. Unfortunately, I didn't use GitHub at the time and lost my code base when my laptop crashed,
                         thankfully, I salvaged a video of the final product. Check it out below."
