@@ -1,6 +1,5 @@
 import Header from '../Header/header.jsx'
 import ProjectStyles from "./Projects.module.scss";
-import ml_tesla from "../../images/ML.jpg"
 import react_logo from "../../images/react_logo.png"
 import centipede from "../../images/centipede.jpg"
 import hypatia_logo from "../../images/hypatia_logo.png"
@@ -23,7 +22,7 @@ function ProjectsBody(props) {
     return (
         < div className={outerDivStyle}>
             <img className={ProjectStyles.Image} src={imgSrc} />
-            <p className={ProjectStyles.MiniHeaderText}> <span style={{ textDecoration: "underline" }}> Status:</span> {status} <span style={{ textDecoration: "underline", paddingLeft: "1vh" }}>Type:</span> {type}</p>
+            <p className={ProjectStyles.MiniHeaderText}> <span style={{ textDecoration: "underline" }}> Status:</span> {status} <span style={{ textDecoration: "underline", paddingLeft: "1vh" }}><br />Type:</span> {type}</p>
             <p className={ProjectStyles.SubHeaderText}>{projectName}</p>
             <p className={ProjectStyles.BodyText}>{projectDesc}</p>
             {view}
@@ -66,7 +65,7 @@ function Projects() {
                         outerDivStyle={ProjectStyles.ImageHeaderDiv}
                         imgSrc={hypatia_logo}
                         status="Finished (Dec 2020)"
-                        type="School"
+                        type="Personal + School"
                         projectName="Hypatia - CheckMath"
                         projectDesc="Our team worked with HypatiaSys' CheckMath API to build a feature
                         encouraging students to learn from mistakes. Our program gave students incorrect math 
