@@ -47,7 +47,7 @@ function Home() {
                     <div className={HomeStyles.AboutMeSubSection}>
                         <p className={HomeStyles.Answer}>
                             My name is Vinayak Gupta - most people call me Vinny. I am a third year Computer Science
-                            Specialist at the University of Toronto, also purusing a Statistics Major and Math Minor.
+                            Specialist at the University of Toronto, also pursuing a Statistics Major and Math Minor.
                             When not on campus, I'm back home in India with my family (and dog!). In my spare time I hike in
                             the Himalayas, watch all kinds of sports and play the guitar.  Check out this picture of me at the summit
                             of one of my treks! </p>
@@ -58,7 +58,7 @@ function Home() {
                         <p className={HomeStyles.Answer}>Glad you asked! I was drawn to Computer Science because of what I
                             call the "no rabbits out of the hat policy". In other words, as long as you know the syntax, everything
                             else is just logic, you need no special tricks to achieve the extraordinary. It's this thrill of solving
-                            frustrating daily problems using everyday logic and basic syntax that I got addcited to.</p>
+                            frustrating daily problems using everyday logic and basic syntax that I got addic   ted to.</p>
                         <img className={HomeStyles.AboutImages} src={cs_reason} />
                     </div>
                     <p className={HomeStyles.Question}>What field(s) in Computer Science am I considering?</p>

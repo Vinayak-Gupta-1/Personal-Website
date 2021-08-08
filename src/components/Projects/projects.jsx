@@ -56,8 +56,8 @@ function Projects() {
                         type="School"
                         projectName="Centipede Game"
                         projectDesc="That's right, I built the popular arcade game Centipede! As part of a project 
-                        for University, I developped a rudimentary version of this game from scratch, using just 
-                        Assembly. Working with registers and memory was ... fun!"
+                        for University, I developped a rudimentary version of this game from scratch using just 
+                        Assembly. Working with registers and memory was... ummm ... fun?!"
                         viewLink=""
                     />
 
@@ -66,7 +66,7 @@ function Projects() {
                         imgSrc={hypatia_logo}
                         status="Finished (Dec 2020)"
                         type="Personal + School"
-                        projectName="Hypatia - CheckMath"
+                        projectName="Hypatia - FlipMath"
                         projectDesc="Our team worked with HypatiaSys' CheckMath API to build a feature
                         encouraging students to learn from mistakes. Our program gave students incorrect math 
                         solutions and graded their attempts to find and correct the error(s)."
@@ -79,14 +79,14 @@ function Projects() {
                         outerDivStyle={ProjectStyles.MiddleBox}
                         imgSrc={sports}
                         status="Finished (Mar 2019)"
-                        type="School"
+                        type="Personal + School"
                         projectName="PlayNow"
-                        projectDesc="For a school project, I used HTML, Java and WAMP to solve an everyday problem: occupied 
+                        projectDesc="I used HTML, Java and WAMP to solve an everyday problem: occupied 
                         sports facilties in my appartment complex. I built a GUI that let residents register 
                         themselves over WLAN and then prebook sporting facities, find sports buddies, lend/borrow equipment 
-                        and even find coaches. Unfortunately, I didn't use GitHub at the time and lost my code base when my laptop crashed,
-                        thankfully, I salvaged a video of the final product. Check it out below."
-                        viewLink="https://drive.google.com/file/d/1kThwLFgF2giEbkLWD7vUMiMF3T7Iefcz/view?usp=sharing"
+                        and even find coaches. Unfortunately, I didn't use GitHub at the time and lost some of my code 
+                        base when my laptop crashed. Thankfully, I salvaged most of it, check it out below."
+                        viewLink="https://github.com/Vinayak-Gupta-1/PlayNow/"
                     />
 
                     <ProjectsBody
