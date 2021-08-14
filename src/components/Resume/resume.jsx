@@ -3,6 +3,9 @@ import ResumeStyles from "./Resume.module.scss"
 import oise from "../../images/oise_logo.jpg"
 import badminton from "../../images/badminton.jpg"
 import plastic from "../../images/plastic.jpg"
+import blanche from "../../images/Blanche.png"
+import jio from "../../images/Jio.png"
+import RIL from "../../images/Reliance.png"
 
 function ResearchBody(props) {
     const outerDivStyle = props["outerDivStyle"];
@@ -31,29 +34,31 @@ function ResearchBody(props) {
     )
 }
 
-// function ExperienceBody(props) {
-//     const outerDivStyle = props["outerDivStyle"];
-//     const imgSrc = props["imgSrc"];
-//     const duration = props["duration"];
-//     const location = props["Location"];
-//     const projectName = props["projectName"];
-//     const projectDesc = props["projectDesc"];
-//     const viewLink = props["viewLink"]
-//     if (viewLink === "") {
-//     }
-//     else {
-//         var view = <a className={ResumeStyles.ViewProjectText} href={viewLink} target="_blank">Read Paper</a>
-//     }
-//     return (
-//         < div className={outerDivStyle}>
-//             <img className={ResumeStyles.Image} src={imgSrc} />
-//             <p className={ResumeStyles.MiniHeaderText}> <span style={{ textDecoration: "underline" }}> Status:</span> {status} <span style={{ textDecoration: "underline", paddingLeft: "1vh" }}> <br />Type:</span> {type}</p>
-//             <p className={ResumeStyles.SubHeaderText}>{projectName}</p>
-//             <p className={ResumeStyles.BodyText}>{projectDesc}</p><br />
-//             {view}
-//         </div >
-//     )
-// }
+function ExperienceBody(props) {
+    const outerDivStyle = props["outerDivStyle"];
+    const imgSrc = props["imgSrc"];
+    const duration = props["duration"];
+    const location = props["location"];
+    const company = props["company"];
+    const role = props["role"]
+    const roleDesc = props["roleDesc"];
+    const viewLink = props["viewLink"]
+    if (viewLink === "") {
+    }
+    else {
+        var view = <a className={ResumeStyles.ViewProjectText} href={viewLink} target="_blank">View Work</a>
+    }
+    return (
+        < div className={outerDivStyle}>
+            <img className={ResumeStyles.Image} src={imgSrc} />
+            <p className={ResumeStyles.MiniHeaderText}> <span style={{ textDecoration: "underline" }}> Duration:</span> {duration} <span style={{ textDecoration: "underline", paddingLeft: "1vh" }}> <br />Location:</span> {location}</p>
+            <p className={ResumeStyles.SubHeaderText}>{company}</p>
+            <p className={ResumeStyles.SubHeaderText2}>{role}</p>
+            <p className={ResumeStyles.BodyText}>{roleDesc}</p><br />
+            {view}
+        </div >
+    )
+}
 
 
 function Resume() {
@@ -74,7 +79,7 @@ function Resume() {
                         status="In Progress (Sept 2020 - )"
                         type="Professional"
                         projectName="Automated Language Scoring"
-                        projectDesc="I have been working as a Machine Learning Research Assistant at the Ontario Instititue for Studies 
+                        projectDesc="I have been working as a Machine Learning Research Assistant at the Ontario Institute for Studies 
                         in Education under Professor Eunice Jang. I train models to score language and cognitive activities
                         for middle schoolers. Examples of some of these activities include oral reading fluency, picture description 
                         and task fullfilment. I've worked extensively with NLP libraries such as spacy, LSA, PyDictionary and
@@ -113,44 +118,41 @@ function Resume() {
                     />
                 </div>
                 <p className={ResumeStyles.HeaderText}>Experience</p>
-                {/* <div className={ResumeStyles.BodyContent}>
-                    <ResearchBody
+                {<div className={ResumeStyles.BodyContent}>
+                    <ExperienceBody
                         outerDivStyle={ResumeStyles.ImageHeaderDiv}
-                        imgSrc={oise}
-                        status="In Progress (Sept 2020 - )"
-                        type="Professional"
-                        projectName="Automated Language Scoring"
-                        projectDesc="Yes indeed! I built this very website over the summer of second year.
-                        I harnessed the power of Youtube to learn React, SaaS and CSS modules to build this, 
-                        if I may say so myself, very elegant website! :)"
+                        imgSrc={blanche}
+                        duration="May - Aug 2021"
+                        location="Toronto, ON"
+                        company="Blanche Media"
+                        role="Front End Lead"
+                        roleDesc=""
+                        viewLink="https://octane.blanchelabs.com/"
+                    />
+
+                    <ExperienceBody
+                        outerDivStyle={ResumeStyles.ImageHeaderDiv}
+                        imgSrc={jio}
+                        duration="May - Aug 2020"
+                        location="Mumbai, MH"
+                        company="Reliance Jio"
+                        role="Machine Learning Intern"
+                        roleDesc=""
                         viewLink=""
                     />
 
-                    <ResearchBody
-                        outerDivStyle={ResumeStyles.MiddleBox}
-                        imgSrc={badminton}
-                        status="Finished (Mar 2019)"
-                        type="Personal + School"
-                        projectName="Badminton Analysis - Angle of Shot"
-                        projectDesc="That's right, I built the popular arcade game Centipede! As part of a project 
-                        for University, I developped a rudimentary version of this game from scratch, using just 
-                        Assembly. Working with registers and memory was ... fun!"
-                        viewLink="https://drive.google.com/file/d/1gRJExkSF5ZTl3-WBv5teSmhQHCa8ydCw/view?usp=sharing"
-                    />
-
-                    <ResearchBody
+                    <ExperienceBody
                         outerDivStyle={ResumeStyles.ImageHeaderDiv}
-                        imgSrc={plastic}
-                        status="Finished (Mar 2019)"
-                        type="Personal + School"
-                        projectName="Plastic Bag Ban - Economic Analysis"
-                        projectDesc="Our team worked with HypatiaSys' CheckMath API to build a feature
-                        encouraging students to learn from mistakes. Our program gave students incorrect math 
-                        solutions and graded their attempts to find and correct the error(s)."
-                        viewLink="https://drive.google.com/file/d/1B29Hs2jT5EPD8pEgxPhu8mvqvrbEq3Oz/view?usp=sharing"
+                        imgSrc={RIL}
+                        duration="Jul 2018"
+                        location="Mumbai, MH"
+                        company="Reliance Industries Limited"
+                        role="Student Trainee"
+                        roleDesc=""
+                        viewLink="https://github.com/Vinayak-Gupta-1/ML-Projects-2018"
                     />
-                </div> */}
-
+                </div>}
+                {/* <p className={ResumeStyles.HeaderText}>Hobbies & Activities</p> */}
             </div>
         </div >
     );

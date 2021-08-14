@@ -28,12 +28,6 @@
     margin-bottom: 7.5vh;
 }
 
-.BodyContent2{
-    @extend .BodyContent;
-    width: 75%;
-    @include paddingStyle($left: 12.5%, $right: 12.5%)
-}
-
 .MiddleBox{
     margin-left: 2vw;
     margin-right: 2vw;
@@ -46,6 +40,12 @@
     @include fontStyle($fontSize: 4.8vh, $color: #faed26);
     margin-bottom: 0vh;
     margin-top: 2vh;
+}
+
+.SubHeaderText2{
+    @include fontStyle($fontSize: 3.8vh, $color: #faed26);
+    margin-bottom: 0vh;
+    margin-top: 0vh;
 }
 
 .MiniHeaderText{
