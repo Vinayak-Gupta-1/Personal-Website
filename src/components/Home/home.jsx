@@ -58,7 +58,7 @@ function Home() {
                         <p className={HomeStyles.Answer}>Glad you asked! I was drawn to Computer Science because of what I
                             call the "no rabbits out of the hat policy". In other words, as long as you know the syntax, everything
                             else is just logic, you need no special tricks to achieve the extraordinary. It's this thrill of solving
-                            frustrating daily problems using everyday logic and basic syntax that I got addic   ted to.</p>
+                            frustrating daily problems using everyday logic and basic syntax that I got addicted to.</p>
                         <img className={HomeStyles.AboutImages} src={cs_reason} />
                     </div>
                     <p className={HomeStyles.Question}>What field(s) in Computer Science am I considering?</p>

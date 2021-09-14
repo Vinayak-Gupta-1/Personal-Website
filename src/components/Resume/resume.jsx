@@ -126,7 +126,7 @@ function Resume() {
                         location="Toronto, ON"
                         company="Blanche Media"
                         role="Front End Lead"
-                        roleDesc="As part of a friend's start-up, I led a group of 4 developers in building the company's front-end. 
+                        roleDesc="As part of a start-up, I led a group of 4 developers in building the company's front-end. 
                         I used Youtube and online articles to teach myself ReactJs, SCSS and other skills I needed. Leading a team and
                         producing something we were proud of was a super fulfilling experience. Unfortunately, due to conflict
                         between co-founders, our team had to choose sides and we collectively chose to abandon the project. 
