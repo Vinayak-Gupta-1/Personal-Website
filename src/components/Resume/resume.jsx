@@ -79,7 +79,7 @@ function Resume() {
                         status="In Progress (Sept 2020 - )"
                         type="Professional"
                         projectName="Automated Language Scoring"
-                        projectDesc="I have been working as a Machine Learning Research Assistant at the Ontario Institute for Studies 
+                        projectDesc="I work as a Machine Learning Research Assistant at the Ontario Institute for Studies 
                         in Education under Professor Eunice Jang. I train models to score language and cognitive activities
                         for middle schoolers. Examples of some of these activities include oral reading fluency, picture description 
                         and task fullfilment. I've worked extensively with NLP libraries such as spacy, LSA, PyDictionary and
@@ -126,18 +126,29 @@ function Resume() {
                         location="Toronto, ON"
                         company="Blanche Media"
                         role="Front End Lead"
-                        roleDesc=""
+                        roleDesc="As part of a friend's start-up, I led a group of 4 developers in building the company's front-end. 
+                        I used Youtube and online articles to teach myself ReactJs, SCSS and other skills I needed. Leading a team and
+                        producing something we were proud of was a super fulfilling experience. Unfortunately, due to conflict
+                        between co-founders, our team had to choose sides and we collectively chose to abandon the project. 
+                        Although disappointing that we couldn't finish what we started, I learnt a lot through the experience, 
+                        both in terms of technical skills and about life in the professional arena. Check out what's 
+                        left of the website below."
                         viewLink="https://octane.blanchelabs.com/"
                     />
 
                     <ExperienceBody
-                        outerDivStyle={ResumeStyles.ImageHeaderDiv}
+                        outerDivStyle={ResumeStyles.MiddleBox}
                         imgSrc={jio}
                         duration="May - Aug 2020"
                         location="Mumbai, MH"
                         company="Reliance Jio"
                         role="Machine Learning Intern"
-                        roleDesc=""
+                        roleDesc="After grappling with ML as a trainee, I was eager to learn more! I did 2/3 of the Andrew Ng course and then dove
+                        into some practical usage. I started by applying Multiple Linear Regression on Jio usage data across 13 days of November 
+                        to predict an hour and province wise distribution of certain KPI: overall ASR %, Overall ACD etc. The ultimate goal of this project 
+                        was to identify regions with certain trends and to make decisions about the network/connectivity of Jio in those regions. With this in mind, 
+                        I wanted to ensure a great model and not just a suffcient one. I therefore learnt and applied Autoregressive Time Series algorithms, SARIMA 
+                        in particular, which then significantly boosted the accuracy."
                         viewLink=""
                     />
 
@@ -148,7 +159,14 @@ function Resume() {
                         location="Mumbai, MH"
                         company="Reliance Industries Limited"
                         role="Student Trainee"
-                        roleDesc=""
+                        roleDesc="This was my first time attempt at Machine Learning and immediately, I was hooked. I got 
+                        my feet wet by learning about important libraries like pandas, numpy and scikit-learn.
+                        I then worked through the Boston Housing problem, attempting different regression models using 
+                        youtube resources and mentorship from current ML engineers at Reliance. Next, I explored the use of
+                        K-Nearest Neighbours to find an approriate substitute for a soccer player. I even tried my hand at 
+                        generating a confusion matrix, but had very little luck at the time. 
+                        Check out the two projects at the link below!
+                        "
                         viewLink="https://github.com/Vinayak-Gupta-1/ML-Projects-2018"
                     />
                 </div>}

@@ -57,7 +57,7 @@ function Projects() {
                         projectName="Centipede Game"
                         projectDesc="That's right, I built the popular arcade game Centipede! As part of a project 
                         for University, I developped a rudimentary version of this game from scratch using just 
-                        Assembly. Working with registers and memory was... ummm ... fun?!"
+                        Assembly. Working with registers and memory was... ummm ... fun!"
                         viewLink=""
                     />
 
